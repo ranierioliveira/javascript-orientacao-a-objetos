@@ -2,6 +2,7 @@ import { Cliente } from "./Cliente.js";
 
 export class ContaCorrente{
     //atributos
+    static numeroDeContas = 0;
     agencia;
     _cliente;//atribuir só se for do tipo cliente
     _saldo = 0//#saldo
@@ -23,6 +24,7 @@ export class ContaCorrente{
     constructor(agencia, cliente){
         this.agencia = agencia;
         this.cliente = cliente; //Usa o acessor set para verificar 
+        ContaCorrente.numeroDeContas += 1;
     }
 
     //métodos
