@@ -21,7 +21,7 @@ export class ContaCorrente{
         return this._saldo;
     }
 
-    constructor(agencia, cliente){
+    constructor(agencia, cliente){ 
         this.agencia = agencia;
         this.cliente = cliente; //Usa o acessor set para verificar 
         ContaCorrente.numeroDeContas += 1;
